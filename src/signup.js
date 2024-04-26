@@ -78,7 +78,7 @@ const SignupForm = () => {
     try {
 
 
-        const response = await axios.post('http://localhost:3000/user/signup', formDataToSend, {
+        const response = await axios.post('https://tech4dev-project.onrender.com/user/signup', formDataToSend, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }

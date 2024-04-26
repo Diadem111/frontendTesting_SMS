@@ -87,7 +87,7 @@ const ApplicationForm = () => {
     try {
         console.log('Form data to send regionsss:', formDataToSend);
        
-      const response = await axios.post('http://localhost:3000/students/upload', formDataToSend, {
+      const response = await axios.post('https://tech4dev-project.onrender.com/students/upload', formDataToSend, {
         headers: {
             'Content-Type': 'multipart/form-data'
           }
