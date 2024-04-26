@@ -71,11 +71,12 @@ const SignupForm = () => {
         dataToSend[key] = value;
       }
       // console.log(key + ':', value);
+
     }
+
     
     try {
 
-        console.log(formData)
 
         const response = await axios.post('http://localhost:3000/user/signup', formDataToSend, {
           headers: {
